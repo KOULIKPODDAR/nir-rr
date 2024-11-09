@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIT Raipur Student Registration Portal</title>
+    <style>
+        /* Reset and basic styling */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        label,
+        select,
+        input,
+        textarea {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2a4d73;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin: 10px 0;
+        }
+
+        header p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            background-color: #007bb5;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 12px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #005f85;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        section h2 {
+            color: #2a4d73;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #2a4d73;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        td,
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="file"] {
+            border: 1px solid #ccc;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #2a4d73;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005f85;
+        }
+
+        footer {
+            background-color: #2a4d73;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .form-field {
+            margin-bottom: 20px;
+        }
+
+        .form-field select {
+            width: 50%;
+        }
+
+        .form-field input[type="file"] {
+            width: auto;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .course-selection {
+            width: 50%;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="NIT RAIPUR LOGO.jpeg" alt="NIT Raipur Logo">
+        <h1>Welcome to NIT Raipur</h1>
+        <p>Empowering Tomorrow's Engineers</p>
+    </header>
+
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#registration-form">Register Now</a></li>
+            <li><a href="#course-list">Courses Offered</a></li>
+            <li><a href="#success-stories">Success Stories</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Campus Image -->
+    <section style="display: flex; justify-content: center; align-items: center; height: 50vh;">
+        <img src="NIT RAIPUR.png" alt="NIT Raipur Campus" style="width: 50%; height: auto; 
+                border: 10px solid #000b01; 
+                border-radius: 15px; 
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+    </section>
+
+    </section>
+
+    </section>
+
+    <!-- Courses Offered -->
+    <section id="course-list">
+        <fieldset class="form-field">
+            <legend>Course Offered</legend>
+
+            <!-- Undergraduate Programs Table -->
+            <h3>Undergraduate Programs (B.Tech/B.Arch)</h3>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>Course</th>
+                    <th>Duration</th>
+                    <th>Fees</th>
+                </tr>
+                <tr>
+                    <td>B.Tech Civil Engineering</td>
+                    <td>4 years</td>
+                    <td>₹1,00,000 per year</td>
+                </tr>
+                <tr>
+                    <td>B.Tech Computer Science & Engineering</td>
+                    <td>4 years</td>
+                    <td>₹1,50,000 per year</td>
+                </tr>
+                <tr>
+                    <td>B.Tech Electronics & Communication</td>
+                    <td>4 years</td>
+                    <td>₹1,30,000 per year</td>
+                </tr>
+                <tr>
+                    <td>B.Tech Electrical Engineering</td>
+                    <td>4 years</td>
+                    <td>₹1,20,000 per year</td>
+                </tr>
+                <tr>
+                    <td>B.Tech Mechanical Engineering</td>
+                    <td>4 years</td>
+                    <td>₹1,20,000 per year</td>
+                </tr>
+                <tr>
+                    <td>B.Tech Chemical Engineering</td>
+                    <td>4 years</td>
+                    <td>₹1,25,000 per year</td>
+                </tr>
+                <tr>
+                    <td>B.Tech Biomedical Engineering</td>
+                    <td>4 years</td>
+                    <td>₹1,40,000 per year</td>
+                </tr>
+                <tr>
+                    <td>B.Tech Information Technology</td>
+                    <td>4 years</td>
+                    <td>₹1,30,000 per year</td>
+                </tr>
+                <tr>
+                    <td>B.Tech Metallurgical & Materials Engineering</td>
+                    <td>4 years</td>
+                    <td>₹1,10,000 per year</td>
+                </tr>
+                <tr>
+                    <td>B.Tech Mining Engineering</td>
+                    <td>4 years</td>
+                    <td>₹1,15,000 per year</td>
+                </tr>
+                <tr>
+                    <td>B.Tech Biotechnology</td>
+                    <td>4 years</td>
+                    <td>₹1,30,000 per year</td>
+                </tr>
+                <tr>
+                    <td>B.Arch Architecture</td>
+                    <td>5 years</td>
+                    <td>₹1,60,000 per year</td>
+                </tr>
+            </table>
+
+            <!-- Postgraduate Programs Table -->
+            <h3>Postgraduate Programs (M.Tech, M.Sc, MCA, Ph.D.)</h3>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>Course</th>
+                    <th>Duration</th>
+                    <th>Fees</th>
+                </tr>
+                <tr>
+                    <td>M.Tech Structural Engineering</td>
+                    <td>2 years</td>
+                    <td>₹1,50,000 per year</td>
+                </tr>
+                <tr>
+                    <td>M.Tech Thermal Engineering</td>
+                    <td>2 years</td>
+                    <td>₹1,50,000 per year</td>
+                </tr>
+                <tr>
+                    <td>M.Tech VLSI</td>
+                    <td>2 years</td>
+                    <td>₹1,60,000 per year</td>
+                </tr>
+                <tr>
+                    <td>M.Tech Power Electronics</td>
+                    <td>2 years</td>
+                    <td>₹1,60,000 per year</td>
+                </tr>
+                <tr>
+                    <td>M.Tech Computer Technology</td>
+                    <td>2 years</td>
+                    <td>₹1,40,000 per year</td>
+                </tr>
+                <tr>
+                    <td>M.Tech Industrial Safety Engineering</td>
+                    <td>2 years</td>
+                    <td>₹1,30,000 per year</td>
+                </tr>
+                <tr>
+                    <td>Ph.D in Engineering</td>
+                    <td>3-5 years</td>
+                    <td>₹80,000 per year</td>
+                </tr>
+                <tr>
+                    <td>Ph.D in Science</td>
+                    <td>3-5 years</td>
+                    <td>₹80,000 per year</td>
+                </tr>
+                <tr>
+                    <td>Ph.D in Humanities</td>
+                    <td>3-5 years</td>
+                    <td>₹70,000 per year</td>
+                </tr>
+                <tr>
+                    <td>Ph.D in Social Sciences</td>
+                    <td>3-5 years</td>
+                    <td>₹70,000 per year</td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Student Registration Form -->
+        <section id="registration-form">
+            <div class="form-container">
+                <h2 class="form-header">Student Registration Form</h2>
+                <form action="#" method="post" enctype="multipart/form-data">
+
+                    <fieldset class="form-field">
+                        <legend>Personal Details</legend>
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" required><br>
+
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required><br>
+
+                        <label for="father-name">Father's Name:</label>
+                        <input type="text" id="father-name" name="father-name" required><br>
+
+                        <label for="mother-name">Mother's Name:</label>
+                        <input type="text" id="mother-name" name="mother-name" required><br>
+
+                        <label for="guardian-name">Guardian's Name:</label>
+                        <input type="text" id="guardian-name" name="guardian-name" required><br>
+
+                        <label for="nationality">Nationality:</label>
+                        <input type="text" id="nationality" name="nationality" required><br>
+
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="state" required><br>
+
+                        <label for="religion">Religion:</label>
+                        <input type="text" id="religion" name="religion" required><br>
+
+                        <label for="blood-group">Blood Group:</label>
+                        <input type="text" id="blood-group" name="blood-group" required><br>
+
+                        <label for="category">Category:</label>
+                        <select id="category" name="category" required>
+                            <option value="general">General</option>
+                            <option value="sc">SC</option>
+                            <option value="st">ST</option>
+                            <option value="obc">OBC</option>
+                        </select><br>
+                    </fieldset>
+
+                    <fieldset class="form-field">
+                        <legend>Contact Details</legend>
+                        <label for="mobile-number">Mobile Number:</label>
+                        <input type="tel" id="mobile-number" name="mobile-number" required><br>
+
+                        <label for="father-mobile">Father's Mobile Number:</label>
+                        <input type="tel" id="father-mobile" name="father-mobile" required><br>
+
+                        <label for="father-email">Father's Email:</label>
+                        <input type="email" id="father-email" name="father-email" required><br>
+
+                        <label for="address">Permanent Address:</label><br>
+                        <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+                        <label for="present-dress">Present Dress:</label>
+                        <input type="text" id="present-dress" name="present-dress" required><br><br>
+                    </fieldset>
+
+                    <fieldset class="form-field">
+                        <legend>Upload Documents</legend>
+                        <label for="picture">Upload Your Picture:</label>
+                        <input type="file" id="picture" name="picture" accept="image/*" required><br><br>
+
+                        <label for="signature">Upload Your Signature:</label>
+                        <input type="file" id="signature" name="signature" accept="image/*" required><br><br>
+                    </fieldset>
+
+                    <!-- Course Selection -->
+                    <fieldset class="form-field">
+                        <legend>Course Selection</legend>
+                        <label for="course">Select Course:</label>
+                        <select id="course" name="course" required>
+                            <option value="civil-engineering">B.Tech Civil Engineering</option>
+                            <option value="computer-science">B.Tech Computer Science & Engineering</option>
+                            <option value="electronics-communication">B.Tech Electronics & Communication</option>
+                            <option value="electrical-engineering">B.Tech Electrical Engineering</option>
+                            <option value="mechanical-engineering">B.Tech Mechanical Engineering</option>
+                            <option value="chemical-engineering">B.Tech Chemical Engineering</option>
+                            <option value="biomedical-engineering">B.Tech Biomedical Engineering</option>
+                            <option value="information-technology">B.Tech Information Technology</option>
+                            <option value="metallurgical-materials-engineering">B.Tech Metallurgical & Materials
+                                Engineering</option>
+                            <option value="mining-engineering">B.Tech Mining Engineering</option>
+                            <option value="biotechnology">B.Tech Biotechnology</option>
+                            <option value="architecture">B.Arch Architecture</option>
+                            <option value="structural-engineering">M.Tech Structural Engineering</option>
+                            <option value="thermal-engineering">M.Tech Thermal Engineering</option>
+                            <option value="vlsi">M.Tech VLSI</option>
+                            <option value="power-electronics">M.Tech Power Electronics</option>
+                            <option value="computer-technology">M.Tech Computer Technology</option>
+                            <option value="industrial-safety-engineering">M.Tech Industrial Safety Engineering</option>
+                            <option value="phd-engineering">Ph.D in Engineering</option>
+                            <option value="phd-science">Ph.D in Science</option>
+                            <option value="phd-humanities">Ph.D in Humanities</option>
+                            <option value="phd-social-sciences">Ph.D in Social Sciences</option>
+                        </select><br><br>
+                    </fieldset>
+
+                    <!-- Submit Button -->
+                    <input type="submit" value="Register Now">
+                </form>
+            </div>
+        </section>
+        <!-- Success Stories -->
+        <section id="success-stories" class="success-stories">
+            <h2>Success Stories</h2>
+            <p>Our alumni have made an indelible mark in the world. Read the inspiring success stories of our students:
+            </p>
+            <div>
+                <h3>Akshay Jain - Metallurgical & Materials Engineering</h3>
+                <p>"Thanks to NIT Raipur, I am now working in Kharagpur, W.B with 7 crore package as a senior project
+                    manager with a leading construction company. The faculty and infrastructure were top-notch, and the
+                    practical knowledge I gained here has been invaluable."</p>
+            </div>
+            <div>
+                <h3>Rishab Chandrakar - Computer Science</h3>
+                <p>"NIT Raipur helped me land a job at a top tech firm as a software engineer. The rigorous coursework
+                    and hands-on approach gave me a strong foundation in computer science, preparing me for the
+                    challenges in the industry."</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <ul>
+                <li><strong>What is the admission process?</strong><br> The admission process is based on your
+                    performance in national-level entrance exams like JEE Main for B.Tech and GATE for M.Tech.</li>
+                <li><strong>Is there any hostel facility?</strong><br> Yes, NIT Raipur provides hostel accommodations
+                    for both male and female students with all necessary amenities.</li>
+                <li><strong>What are the scholarship opportunities?</strong><br> The institute offers various
+                    scholarships based on academic performance, economic background, and other criteria.</li>
+                <li><strong>Can I apply for more than one course?</strong><br> No, you can apply for only one course
+                    during the admission process.</li>
+            </ul>
+        </section>
+
+        <!-- Google Map Location -->
+        <section id="map">
+            <h2>Find Us on Google Maps</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.6713216853634!2d81.6050291!3d21.2497222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x21543965c50c43c7!2sNIT+Raipur!5e0!3m2!1sen!2sin!4v1699502224243"
+                width="30%" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <address>
+                National Institute of Technology Raipur,<br>
+                G.E. Road, Raipur, Chhattisgarh, 492010<br>
+                Email: <a href="mailto:info@nitrr.ac.in">info@nitrr.ac.in</a><br>
+                Phone: +91-771-2254200
+            </address>
+            <h3>Contact Form</h3>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea><br>
+
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 NIT Raipur | <a href="https://www.nitrr.ac.in" target="_blank">Visit our website</a></p>
+            <p>Follow us:</p>
+            <p>
+                <a href="https://www.facebook.com/NITRaipur" target="_blank">Facebook</a> |
+                <a href="https://twitter.com/nit_raipur" target="_blank">Twitter</a> |
+                <a href="https://www.instagram.com/nit_raipur" target="_blank">Instagram</a>
+            </p>
+        </footer>
+</body>
+
+</html>
